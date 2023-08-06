@@ -157,7 +157,7 @@
     (uuid f8f8f930-849b-4e84-adbd-8004d253a641)
   )
 
-  (text "@Todo List:\n\n1- SPI Pull-Up check (Not necessary. Because, stm32 spi pins arrangeable to pull-up)\n2- ADC allocation\n3- Power terminals selection\n4- Library organization ( symbol-footprint-3D model editing and matching )\n5- PCB creation\n6- How to import PCB layer stack up\n7- How to version control kicad"
+  (text "@Todo List:\n\n1- SPI Pull-Up check (Not necessary. Because, stm32 spi pins arrangeable to pull-up)\n2- ADC allocation (Done!)\n3- Power terminals selection\n4- Library organization ( symbol-footprint-3D model editing and matching )\n5- PCB creation\n6- How to import PCB layer stack up\n7- How to version control kicad"
     (at 14.605 32.385 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2f9a48db-0e40-4171-9e3c-01f13a748dbd)
