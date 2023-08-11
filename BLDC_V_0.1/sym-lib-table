@@ -8,4 +8,7 @@
   (lib (name "15EDGVC")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_15EDGVC-3-5-03P-14-00A-H-/KiCADv6/2023-08-10_08-20-47.kicad_sym")(options " pwr_sym_only")(descr ""))
   (lib (name "ACM2012")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_ACM2012-900-2P-T002/KiCADv6/2023-08-10_08-29-23.kicad_sym")(options " pwr_sym_only")(descr ""))
   (lib (name "NMOS_BSC070")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_BSC070N10NS5SCATMA1/KiCADv6/2023-07-29_20-11-44.kicad_sym")(options "")(descr ""))
+  (lib (name "LMR38020S")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_LMR38020SDDAR/KiCADv6/2023-08-11_11-31-06.kicad_sym")(options "")(descr ""))
+  (lib (name "CDRH127/LDNP-330MC")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_CDRH127-LDNP-470MC/KiCADv6/2023-08-11_11-35-24.kicad_sym")(options "")(descr ""))
+  (lib (name "BULK-Electrolitic-Cap")(type "KiCad")(uri "${KIPRJMOD}/Libraries/LIB_EEE-FN1J101V/EEE-FN1J101V/KiCad/EEE-FN1J101V.kicad_sym")(options "")(descr ""))
 )

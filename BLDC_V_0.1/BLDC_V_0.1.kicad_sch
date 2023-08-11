@@ -353,8 +353,8 @@
     (uuid ffc3f642-d728-4e73-a517-96a45fe260b8)
   )
 
-  (text "@Todo List:\n1- Choose connector for comm.\n3- Power terminals selection\n4- Library organization ( symbol-footprint-3D model editing and matching )\n5- PCB creation\n6- How to import PCB layer stack up\n7- How to version control kicad"
-    (at 14.605 32.385 0)
+  (text "@Todo List:\n1- How to import PCB layer stack up\n2- Add 1x10uF, 2x100nF X7R ceramic (Place near MOSFETS)\n\n\n"
+    (at 13.97 22.86 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2f9a48db-0e40-4171-9e3c-01f13a748dbd)
   )

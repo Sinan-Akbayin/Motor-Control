@@ -1,4 +1,4 @@
-21948003865491836
+21953079153996256
 15EDGVC
 CONN_15EDGVC-3.5-03P-1X_DEG
 
@@ -2456,6 +2456,13 @@ speaker CUI
 0
 2
 2
+CDRH127
+IND_CDRH127&slash_LDNP-470MC_SUM
+
+CDRH127/LDNP-470MC 
+0
+2
+2
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -2589,6 +2596,13 @@ Gauge Massstab 100mm SilkScreenTop Type 2
 0
 0
 0
+Capacitor
+EEHZT1E561UV
+VibrationProof_G
+Capacitor Polarised
+0
+6
+2
 Capacitor_SMD
 CP_Elec_3x5.3
 SMT capacitor, aluminium electrolytic, 3x5.3, Cornell Dubilier Electronics 
@@ -50287,6 +50301,13 @@ muRata MEJ1S DCDC-Converter
 0
 4
 4
+Converter_DCDC
+LMR38020SDDAR
+
+
+0
+9
+9
 Crystal
 Crystal_AT310_D3.0mm_L10.0mm_Horizontal
 Crystal THT AT310 10.0mm-10.5mm length 3.0mm diameter http://www.cinetech.com.tw/upload/2011/04/20110401165201.pdf
