@@ -491,6 +491,10 @@
     [
       "2f36e7a2-f157-4b5a-b8fb-f184b031f07e",
       "Half-Bridge_C"
+    ],
+    [
+      "0b08cf2e-adc1-43e0-b092-2bca45900a22",
+      "Communications"
     ]
   ],
   "text_variables": {}

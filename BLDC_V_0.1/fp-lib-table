@@ -1,4 +1,12 @@
 (fp_lib_table
   (version 7)
-  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/ul_DRV8350SRTVT/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "DRV-8350S")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_DRV8350SRTVT/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "15EDGVC")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_15EDGVC-3-5-03P-14-00A-H-/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "ACM2012")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_ACM2012-900-2P-T002/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "B0505S")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_B0505S-1WR2/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "BSC070N")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_BSC070N10NS5SCATMA1/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "IPT007N06")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_IPT007N06NATMA1/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "PESD2CAN-215")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_PESD2CAN-215/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "STM32G473VET6")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_STM32G473VET6/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "JST-Connector")(type "KiCad")(uri "${KIPRJMOD}/Libraries/w_conn_jst-ph.pretty")(options "")(descr ""))
 )
