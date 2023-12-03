@@ -1735,9 +1735,6 @@
   (junction (at 75.565 66.675) (diameter 0) (color 0 0 0 0)
     (uuid 862b3ca6-5f40-44d3-beab-7abe277706ea)
   )
-  (junction (at 120.015 31.115) (diameter 0) (color 0 0 0 0)
-    (uuid 8ce8c3fb-3bbc-4f4d-a768-f930515ef2d5)
-  )
   (junction (at 57.785 38.735) (diameter 0) (color 0 0 0 0)
     (uuid 969b633f-d1cd-4bf5-bde1-471ff5c497d2)
   )
@@ -1767,9 +1764,6 @@
   )
   (junction (at 114.935 22.225) (diameter 0) (color 0 0 0 0)
     (uuid c67364a5-60c5-4b33-a93a-456a0f3bbdd6)
-  )
-  (junction (at 120.015 38.735) (diameter 0) (color 0 0 0 0)
-    (uuid c993ce3e-0c82-43f6-aebd-0e362c2d3447)
   )
   (junction (at 51.435 163.83) (diameter 0) (color 0 0 0 0)
     (uuid d6a1c20b-c86f-425e-999a-4f8509700cd3)
@@ -1810,7 +1804,7 @@
     (stroke (width 0) (type default))
     (uuid 07fac639-2dd9-48d1-a803-0fa1ba611857)
   )
-  (wire (pts (xy 120.015 38.735) (xy 131.445 38.735))
+  (wire (pts (xy 116.205 38.735) (xy 131.445 38.735))
     (stroke (width 0) (type default))
     (uuid 0aed3feb-cfe7-4f79-beb4-82a5c2416609)
   )
@@ -1922,7 +1916,7 @@
     (stroke (width 0) (type default))
     (uuid 3c533f25-8265-43f5-9914-2794a8a6b94b)
   )
-  (wire (pts (xy 120.015 31.115) (xy 131.445 31.115))
+  (wire (pts (xy 114.935 31.115) (xy 131.445 31.115))
     (stroke (width 0) (type default))
     (uuid 3d2d64e0-c9d7-4999-bdbd-71c94ebea404)
   )
@@ -1957,10 +1951,6 @@
   (wire (pts (xy 22.86 151.13) (xy 37.465 151.13))
     (stroke (width 0) (type default))
     (uuid 4e25f619-b39c-46d0-890b-80c453dd4f5f)
-  )
-  (wire (pts (xy 114.935 31.115) (xy 120.015 31.115))
-    (stroke (width 0) (type default))
-    (uuid 4ed01cdc-f12a-477c-b7c2-ffb2d2d524b7)
   )
   (wire (pts (xy 58.42 163.83) (xy 51.435 163.83))
     (stroke (width 0) (type default))
@@ -2166,10 +2156,6 @@
   (wire (pts (xy 88.265 38.735) (xy 92.075 38.735))
     (stroke (width 0) (type default))
     (uuid a716335a-2771-4c96-b5fa-8132dde0cd51)
-  )
-  (wire (pts (xy 120.015 38.735) (xy 116.205 38.735))
-    (stroke (width 0) (type default))
-    (uuid a7978b82-0bc7-4010-8925-7db9e4359acd)
   )
   (wire (pts (xy 58.42 148.59) (xy 58.42 153.035))
     (stroke (width 0) (type default))
@@ -2567,10 +2553,10 @@
     (property "Datasheet" "~" (at 103.505 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 04fdd905-00ae-4635-bb5f-7fe309449f51))
-    (pin "2" (uuid 6b328f3c-9d06-405f-9157-64de985f53a6))
-    (pin "3" (uuid 146f75a0-ee0c-4c96-9614-2b13dd9de211))
-    (pin "4" (uuid a9256b51-1029-4c14-858c-4b98a4ec3cfa))
+    (pin "1" (uuid 8769f4a5-3831-4384-9eb6-4115556a757a))
+    (pin "2" (uuid 3d6d93b9-9620-4f55-a878-8f51268fda5d))
+    (pin "3" (uuid 0d556f58-4af1-41ac-bef7-f15140de0268))
+    (pin "4" (uuid f20d1776-4cab-4cc8-ad6e-589155ad4aee))
     (instances
       (project "STM32F4_REV2"
         (path "/4b4be410-45f9-449d-b12c-094992d827f3"
@@ -2837,36 +2823,6 @@
     )
   )
 
-  (symbol (lib_id "Connector:TestPoint") (at 120.015 38.735 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 308bfe88-5151-4d6e-9777-54d0d42e7898)
-    (property "Reference" "TP12" (at 121.7617 40.767 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "TestPoint" (at 121.7617 43.307 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" (at 114.935 38.735 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 114.935 38.735 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 129d5214-731c-42ee-8c0b-23fc4669296b))
-    (instances
-      (project "BLDC_V_0.1"
-        (path "/4cd36721-3778-4ad1-9865-468b6186ee19/0b08cf2e-adc1-43e0-b092-2bca45900a22"
-          (reference "TP12") (unit 1)
-        )
-      )
-      (project "CAN_2x_485"
-        (path "/71e8aef5-e069-41ad-a908-5bfc657219c6"
-          (reference "TP2") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 135.255 28.575 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 350f437c-990c-4c46-82df-3bc1375303f6)
@@ -2979,8 +2935,8 @@
     (property "Datasheet" "~" (at 65.405 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a417d8ef-302e-4f5a-aab5-240edd878e37))
-    (pin "2" (uuid f125ea15-ef09-488e-bc3a-54ce94b762b6))
+    (pin "1" (uuid 9a6021bc-3618-4a58-beca-d251a94a98da))
+    (pin "2" (uuid 21bbb213-2a39-41f1-96c0-16d42db9c9b2))
     (instances
       (project "BLDC_V_0.1"
         (path "/4cd36721-3778-4ad1-9865-468b6186ee19/0b08cf2e-adc1-43e0-b092-2bca45900a22"
@@ -3070,8 +3026,8 @@
     (property "Datasheet" "~" (at 44.45 137.795 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 53821463-e282-4eb3-92cb-9e5bdf1ee94a))
-    (pin "2" (uuid 05a2437a-8c59-4ba0-ae6c-801509033a4c))
+    (pin "1" (uuid cf6db956-248b-46c1-bf82-6500795eda0f))
+    (pin "2" (uuid 30b102e5-bb9e-4622-b90a-1b03af9477ed))
     (instances
       (project "BLDC_V_0.1"
         (path "/4cd36721-3778-4ad1-9865-468b6186ee19/0b08cf2e-adc1-43e0-b092-2bca45900a22"
@@ -3296,7 +3252,7 @@
     (property "Value" "Conn_01x03" (at 145.415 36.195 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" (at 142.875 34.925 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 142.875 34.925 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 142.875 34.925 0)
@@ -3674,8 +3630,8 @@
     (property "Datasheet" "~" (at 51.435 137.795 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 22018cc4-5717-4962-b696-c7906303d7d3))
-    (pin "2" (uuid 6bc3c672-4c62-4a36-b1bc-fb4570401168))
+    (pin "1" (uuid 71ce5ffe-c283-4e32-9080-3f0b7b79c01f))
+    (pin "2" (uuid 5b72759f-8be3-492d-ba14-c28a4ed53db5))
     (instances
       (project "BLDC_V_0.1"
         (path "/4cd36721-3778-4ad1-9865-468b6186ee19/0b08cf2e-adc1-43e0-b092-2bca45900a22"
@@ -4342,36 +4298,6 @@
       (project "CAN_2x_485"
         (path "/71e8aef5-e069-41ad-a908-5bfc657219c6"
           (reference "#PWR012") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 120.015 31.115 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid f182b68a-283f-4a67-8fc1-8237a3dc66f9)
-    (property "Reference" "TP11" (at 121.285 27.305 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 121.285 29.845 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" (at 125.095 31.115 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 125.095 31.115 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 99ae1eca-9bc5-42c1-a308-d0c32fff5eb7))
-    (instances
-      (project "BLDC_V_0.1"
-        (path "/4cd36721-3778-4ad1-9865-468b6186ee19/0b08cf2e-adc1-43e0-b092-2bca45900a22"
-          (reference "TP11") (unit 1)
-        )
-      )
-      (project "CAN_2x_485"
-        (path "/71e8aef5-e069-41ad-a908-5bfc657219c6"
-          (reference "TP1") (unit 1)
         )
       )
     )
