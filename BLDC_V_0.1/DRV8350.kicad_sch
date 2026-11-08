@@ -2665,18 +2665,6 @@
 		(uuid "192ce081-47b6-4cdf-8685-76ed07a40497")
 	)
 	(junction
-		(at 245.745 83.185)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23e3d827-5211-4b33-ac25-dc45c6d7fd1d")
-	)
-	(junction
-		(at 245.745 67.945)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "25b700ab-11bc-48aa-a058-88b6fd2609fa")
-	)
-	(junction
 		(at 201.93 151.765)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2743,12 +2731,6 @@
 		(uuid "822afc30-4d0a-440b-b7d7-b7a2ba20c9ad")
 	)
 	(junction
-		(at 252.73 67.945)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "863b16eb-3fee-48f2-9414-e5e2cf89a3f5")
-	)
-	(junction
 		(at 124.46 158.115)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2773,12 +2755,6 @@
 		(uuid "a71ee035-a829-4eca-a725-34a9d9fa4146")
 	)
 	(junction
-		(at 238.76 83.185)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b2f3ae63-23ad-48d6-b3b0-d99fe7b8045c")
-	)
-	(junction
 		(at 61.595 56.515)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2801,18 +2777,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ceebc7ee-9c09-4cb4-9d1e-532368f9d13e")
-	)
-	(junction
-		(at 252.73 83.185)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d1385b48-ecdb-4483-8ad4-ef10c97a3670")
-	)
-	(junction
-		(at 238.76 67.945)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d9503ed3-40b3-423d-a3da-ed4bf095021e")
 	)
 	(junction
 		(at 157.48 158.115)
@@ -2982,17 +2946,6 @@
 			(type default)
 		)
 		(uuid "166cc1d1-a6ee-44ba-bed6-19ea2ca410d3")
-	)
-	(wire
-		(pts
-			(xy 252.73 67.945)
-			(xy 266.7 67.945)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17221835-3740-4aa2-90d8-2824096324a3")
 	)
 	(wire
 		(pts
@@ -3205,17 +3158,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 67.945)
-			(xy 266.7 71.755)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ed8e5a4-5807-463b-b168-ce43fba00d00")
-	)
-	(wire
-		(pts
 			(xy 238.125 42.545)
 			(xy 238.125 46.355)
 		)
@@ -3271,17 +3213,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 67.945)
-			(xy 238.76 67.945)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "366ba728-fa97-4be2-996a-5c422f9665f6")
-	)
-	(wire
-		(pts
 			(xy 85.725 183.515)
 			(xy 85.725 174.625)
 		)
@@ -3290,17 +3221,6 @@
 			(type default)
 		)
 		(uuid "36ea43ff-f4cf-430f-9948-060ee4fde637")
-	)
-	(wire
-		(pts
-			(xy 180.975 34.925)
-			(xy 183.515 34.925)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b2d4eba-d0ea-4f29-8143-36f99cb17e3e")
 	)
 	(wire
 		(pts
@@ -3348,17 +3268,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 83.185)
-			(xy 238.76 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42db5e4e-e6fd-4de1-a40b-de1d939693ac")
-	)
-	(wire
-		(pts
 			(xy 73.66 79.375)
 			(xy 79.375 79.375)
 		)
@@ -3367,28 +3276,6 @@
 			(type default)
 		)
 		(uuid "4336f646-c5a6-4626-9f23-1ba3e41fe438")
-	)
-	(wire
-		(pts
-			(xy 238.76 67.945)
-			(xy 238.76 71.755)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "471a78f8-c914-4761-a4d9-bde0bcbae104")
-	)
-	(wire
-		(pts
-			(xy 245.745 83.185)
-			(xy 245.745 86.995)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4764eb65-895f-4d7f-a090-feb92d52ef02")
 	)
 	(wire
 		(pts
@@ -3491,17 +3378,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.745 63.5)
-			(xy 245.745 67.945)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56faab8e-825f-4394-889b-a28fccd2cc37")
-	)
-	(wire
-		(pts
 			(xy 201.93 128.27)
 			(xy 201.93 130.81)
 		)
@@ -3579,17 +3455,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 79.375)
-			(xy 252.73 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62cc6297-bc33-4acb-82f8-c6d38679b598")
-	)
-	(wire
-		(pts
 			(xy 238.76 140.335)
 			(xy 238.76 142.24)
 		)
@@ -3656,17 +3521,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.745 67.945)
-			(xy 252.73 67.945)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73167d4a-4906-4bd6-848a-e1b1dedf160f")
-	)
-	(wire
-		(pts
 			(xy 73.66 71.755)
 			(xy 79.375 71.755)
 		)
@@ -3711,28 +3565,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 79.375)
-			(xy 224.79 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d628a6c-3bf9-4ce8-b57d-398d33128f7f")
-	)
-	(wire
-		(pts
-			(xy 238.76 79.375)
-			(xy 238.76 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "807dbfc9-caeb-42db-87ac-62592e0e748d")
-	)
-	(wire
-		(pts
 			(xy 201.93 151.765)
 			(xy 201.93 153.67)
 		)
@@ -3774,17 +3606,6 @@
 			(type default)
 		)
 		(uuid "857aef32-f211-46e4-8d56-1a856ed0b25a")
-	)
-	(wire
-		(pts
-			(xy 266.7 79.375)
-			(xy 266.7 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8779748d-a2a9-4bcf-9fa4-089a81bd660d")
 	)
 	(wire
 		(pts
@@ -3906,17 +3727,6 @@
 			(type default)
 		)
 		(uuid "a4087fe5-e0a4-4fa2-96ca-df0626415354")
-	)
-	(wire
-		(pts
-			(xy 252.73 83.185)
-			(xy 266.7 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4cb06fd-30fb-4f01-92be-4a330b941739")
 	)
 	(wire
 		(pts
@@ -4173,39 +3983,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 83.185)
-			(xy 245.745 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9aad330-dded-4f51-bfc6-7a1b32e57212")
-	)
-	(wire
-		(pts
-			(xy 224.79 67.945)
-			(xy 224.79 71.755)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc54495b-6631-43b7-ad75-44d8fde91a51")
-	)
-	(wire
-		(pts
-			(xy 245.745 83.185)
-			(xy 252.73 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdaec497-0e67-41ea-b763-1646ad056468")
-	)
-	(wire
-		(pts
 			(xy 266.065 42.545)
 			(xy 266.065 46.355)
 		)
@@ -4247,17 +4024,6 @@
 			(type default)
 		)
 		(uuid "d4c0b260-e0be-4c42-b1a7-9b08df24568a")
-	)
-	(wire
-		(pts
-			(xy 238.76 67.945)
-			(xy 245.745 67.945)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4d07439-914a-40b1-b0ab-35a4e127aa7e")
 	)
 	(wire
 		(pts
@@ -4357,17 +4123,6 @@
 			(type default)
 		)
 		(uuid "deca6e28-7252-4547-bb3b-4802d0fbd2bf")
-	)
-	(wire
-		(pts
-			(xy 180.975 32.385)
-			(xy 180.975 34.925)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1ee28f9-3955-4444-b15d-6a63a7403c61")
 	)
 	(wire
 		(pts
@@ -4503,17 +4258,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 67.945)
-			(xy 252.73 71.755)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7bc54be-ddb2-4b83-bc91-154dd367c656")
-	)
-	(wire
-		(pts
 			(xy 74.295 66.675)
 			(xy 79.375 66.675)
 		)
@@ -4600,6 +4344,53 @@
 		)
 		(uuid "fd021457-bc3a-42e4-a407-d7f9f36a19b9")
 	)
+	(wire
+		(pts
+			(xy 131.445 168.275)
+			(xy 143.51 168.275)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a75a3d7-7443-47ba-a1af-5900babf01e4")
+	)
+	(wire
+		(pts
+			(xy 40.64 91.44)
+			(xy 40.64 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec3cda0b-845e-4659-945d-e8dcd00fa2ba")
+	)
+	(wire
+		(pts
+			(xy 50.8 91.44)
+			(xy 50.8 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1158017-8841-4f2d-b8c1-93db7a91a549")
+	)
+	(wire
+		(pts
+			(xy 40.64 102.87)
+			(xy 40.64 105.41)
+		)
+		(uuid "fec42d88-9067-4244-96e6-63386f0772be")
+	)
+	(wire
+		(pts
+			(xy 50.8 102.87)
+			(xy 50.8 105.41)
+		)
+		(uuid "c611e51d-a442-422a-aec4-272d96792ca0")
+	)
 	(text "Buck Converter"
 		(at 47.625 133.985 0)
 		(effects
@@ -4647,6 +4438,26 @@
 			(justify right bottom)
 		)
 		(uuid "d6f0c08e-cbc4-4e1e-b6b1-ad2d5f43498f")
+	)
+	(label "FAULT_N"
+		(at 40.64 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "804fb056-d19d-4a47-bb1b-d248d9c39f30")
+	)
+	(label "SPI_MISO"
+		(at 50.8 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "96fe4744-b525-4496-b3e9-a8834387160d")
 	)
 	(hierarchical_label "DRV_ENABLE"
 		(shape input)
@@ -4933,16 +4744,6 @@
 			(justify right)
 		)
 		(uuid "ebedb71c-6ab1-474e-8e9a-c2b4a455ccbb")
-	)
-(wire
-		(pts
-			(xy 131.445 168.275) (xy 143.51 168.275)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a75a3d7-7443-47ba-a1af-5900babf01e4")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5290,7 +5091,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "EEE-FN1J101V"
+		(property "Value" "100u 100V"
 			(at 273.685 40.005 90)
 			(hide yes)
 			(show_name no)
@@ -5302,7 +5103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor:EEHZT1E561UV"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
 			(at 178.765 60.325 0)
 			(hide yes)
 			(show_name no)
@@ -5412,84 +5213,16 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "power:VDC")
-		(at 180.975 32.385 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced)
-		(uuid "15f1afdf-d615-419a-ae6e-f5adc97cff3f")
-		(property "Reference" "#PWR051"
-			(at 180.975 34.925 0)
+	
+		(property "MPN" "Panasonic EEV-FK2A101M"
+			(at 266.065 38.735 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Value" "VDC"
-			(at 180.975 27.559 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.975 32.385 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.975 32.385 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 180.975 32.385 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "74f5da65-f196-4e48-8102-9beb69ca2654")
-		)
-		(instances
-			(project "BLDC_V_0.1"
-				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
+		))
 	(symbol
 		(lib_id "power:VDC")
 		(at 128.143 31.115 0)
@@ -5718,149 +5451,6 @@
 			(project "BLDC_V_0.1"
 				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
 					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BULK-Electrolitic-Cap:EEE-FN1J101V")
-		(at 224.79 75.565 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "26ef0d6a-4a5e-40d3-a586-395aefc5a7cf")
-		(property "Reference" "C53"
-			(at 217.17 71.755 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "EEE-FN1J101V"
-			(at 232.41 76.835 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor:EEHZT1E561UV"
-			(at 137.49 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/RDE0000C1259.pdf"
-			(at 37.49 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" ""
-			(at 224.79 75.565 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "10.5"
-			(at -162.51 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "667-EEE-FN1J101V"
-			(at -262.51 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FN1J101V?qs=OlC7AqGiEDmKEdgp6dDkOw%3D%3D"
-			(at -362.51 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at -462.51 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EEE-FN1J101V"
-			(at -562.51 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "+"
-			(uuid "377a4897-0a22-43b4-9b37-18702763e1b7")
-		)
-		(pin "-"
-			(uuid "e1c51e50-da2c-486b-a527-1b4b2ccb163c")
-		)
-		(instances
-			(project "BLDC_V_0.1"
-				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
-					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -6159,7 +5749,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "EEE-FN1J101V"
+		(property "Value" "100u 100V"
 			(at 231.775 40.005 90)
 			(hide yes)
 			(show_name no)
@@ -6171,7 +5761,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor:EEHZT1E561UV"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
 			(at 136.855 60.325 0)
 			(hide yes)
 			(show_name no)
@@ -6302,7 +5892,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "Panasonic EEV-FK2A101M"
+			(at 224.155 38.735 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 201.93 146.05 0)
@@ -6797,303 +6396,6 @@
 			(project "BLDC_V_0.1"
 				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
 					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BULK-Electrolitic-Cap:EEE-FN1J101V")
-		(at 252.73 75.565 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3e098ab0-efe0-4fb4-a875-3c171fa7bff3")
-		(property "Reference" "C55"
-			(at 245.11 71.755 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "EEE-FN1J101V"
-			(at 260.35 76.835 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor:EEHZT1E561UV"
-			(at 165.43 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/RDE0000C1259.pdf"
-			(at 65.43 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 75.565 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "10.5"
-			(at -134.57 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "667-EEE-FN1J101V"
-			(at -234.57 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FN1J101V?qs=OlC7AqGiEDmKEdgp6dDkOw%3D%3D"
-			(at -334.57 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at -434.57 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EEE-FN1J101V"
-			(at -534.57 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "+"
-			(uuid "0d85a225-1e59-478d-b16b-2c0d50fe06e1")
-		)
-		(pin "-"
-			(uuid "00daa546-f0b9-4557-b529-1bf96c206506")
-		)
-		(instances
-			(project "BLDC_V_0.1"
-				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
-					(reference "C55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDC")
-		(at 245.745 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced)
-		(uuid "4e0f3819-082c-46b9-b741-d4d87aace84b")
-		(property "Reference" "#PWR037"
-			(at 245.745 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDC"
-			(at 245.745 58.674 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 245.745 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 245.745 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 245.745 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "81f41da1-cb85-4124-9862-d10f92dcf196")
-		)
-		(instances
-			(project "BLDC_V_0.1"
-				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Power_Welding_PAD")
-		(at 194.945 34.925 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced)
-		(uuid "5823b14b-b47e-47ab-af41-7b51c63756d3")
-		(property "Reference" "J13"
-			(at 200.025 34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VDC"
-			(at 194.945 34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BLDC_Project:Power_Welding_Pad_10x10mm"
-			(at 194.945 34.925 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 194.945 34.925 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 194.945 34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "0e376f28-ee4d-4006-b36f-28b40883572f")
-		)
-		(instances
-			(project "BLDC_V_0.1"
-				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
-					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -7871,84 +7173,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 245.745 86.995 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced)
-		(uuid "8be59dc2-2f2e-45ea-997b-ece78a93e26c")
-		(property "Reference" "#PWR038"
-			(at 245.745 93.345 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 245.745 92.075 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 245.745 86.995 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 245.745 86.995 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 245.745 86.995 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "1ba1dac8-801c-4601-ac06-61b415268906")
-		)
-		(instances
-			(project "BLDC_V_0.1"
-				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDC")
 		(at 238.76 123.19 0)
 		(unit 1)
@@ -8583,149 +7807,6 @@
 		)
 	)
 	(symbol
-		(lib_id "BULK-Electrolitic-Cap:EEE-FN1J101V")
-		(at 266.7 75.565 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b8761cf2-edd9-436f-b97b-d3eb1797b01e")
-		(property "Reference" "C56"
-			(at 259.08 71.755 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "EEE-FN1J101V"
-			(at 274.32 76.835 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor:EEHZT1E561UV"
-			(at 179.4 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/RDE0000C1259.pdf"
-			(at 79.4 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" ""
-			(at 266.7 75.565 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "10.5"
-			(at -120.6 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "667-EEE-FN1J101V"
-			(at -220.6 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FN1J101V?qs=OlC7AqGiEDmKEdgp6dDkOw%3D%3D"
-			(at -320.6 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at -420.6 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EEE-FN1J101V"
-			(at -520.6 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "+"
-			(uuid "b3beec6b-6e06-46ac-929e-e9a4f1cbed03")
-		)
-		(pin "-"
-			(uuid "a1a6dcd1-811f-4109-9dec-2692b43913b0")
-		)
-		(instances
-			(project "BLDC_V_0.1"
-				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
-					(reference "C56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 157.48 154.305 0)
 		(unit 1)
@@ -8821,7 +7902,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "EEE-FN1J101V"
+		(property "Value" "100u 100V"
 			(at 259.715 40.005 90)
 			(hide yes)
 			(show_name no)
@@ -8833,7 +7914,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor:EEHZT1E561UV"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
 			(at 164.795 60.325 0)
 			(hide yes)
 			(show_name no)
@@ -8943,7 +8024,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "Panasonic EEV-FK2A101M"
+			(at 252.095 38.735 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 53.975 34.925 0)
@@ -9030,149 +8120,6 @@
 			(project "BLDC_V_0.1"
 				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
 					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BULK-Electrolitic-Cap:EEE-FN1J101V")
-		(at 238.76 75.565 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d73dfe8b-1366-4459-9b59-075738cfb59e")
-		(property "Reference" "C54"
-			(at 231.14 71.755 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "EEE-FN1J101V"
-			(at 246.38 76.835 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor:EEHZT1E561UV"
-			(at 151.46 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/RDE0000C1259.pdf"
-			(at 51.46 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" ""
-			(at 238.76 75.565 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "10.5"
-			(at -148.54 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "667-EEE-FN1J101V"
-			(at -248.54 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FN1J101V?qs=OlC7AqGiEDmKEdgp6dDkOw%3D%3D"
-			(at -348.54 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at -448.54 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EEE-FN1J101V"
-			(at -548.54 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "+"
-			(uuid "e12a9c08-5fbb-4b80-96ea-383703333f1f")
-		)
-		(pin "-"
-			(uuid "d3aad170-fd93-4f19-9ffd-facf0d494750")
-		)
-		(instances
-			(project "BLDC_V_0.1"
-				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
-					(reference "C54")
 					(unit 1)
 				)
 			)
@@ -9471,7 +8418,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "EEE-FN1J101V"
+		(property "Value" "100u 100V"
 			(at 245.745 40.005 90)
 			(hide yes)
 			(show_name no)
@@ -9483,7 +8430,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor:EEHZT1E561UV"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_16x17.5"
 			(at 150.825 60.325 0)
 			(hide yes)
 			(show_name no)
@@ -9593,7 +8540,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "Panasonic EEV-FK2A101M"
+			(at 238.125 38.735 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 131.445 164.465 0)
@@ -10188,6 +9144,248 @@
 			(project "BLDC_V_0.1"
 				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 40.64 99.06 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f1ae2c75-9334-48b3-b170-1a98914aafe2")
+		(property "Reference" "R38"
+			(at 42.672 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 40.64 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 40.64 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 40.64 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "BLDC_V_0.1"
+				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 50.8 99.06 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "01450710-0a25-4ad7-9748-54560f8efab9")
+		(property "Reference" "R39"
+			(at 52.832 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 50.8 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 50.8 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 50.8 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "BLDC_V_0.1"
+				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 40.64 91.44 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8dce1d6a-0f10-4bae-ae24-3a53e61f4eb9")
+		(property "Reference" "#PWR0101"
+			(at 40.64 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 40.64 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 40.64 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "BLDC_V_0.1"
+				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 50.8 91.44 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d43c9a3-9125-4d67-af6a-d9a561c39917")
+		(property "Reference" "#PWR0102"
+			(at 50.8 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 50.8 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 50.8 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "BLDC_V_0.1"
+				(path "/4cd36721-3778-4ad1-9865-468b6186ee19/e97abce0-bc92-448f-982a-a20924fbdbb0"
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
