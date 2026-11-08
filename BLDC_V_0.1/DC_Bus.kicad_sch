@@ -1987,7 +1987,7 @@
 				)
 			)
 		)
-		(property "MPN" "Analog Devices AD8418AWBRZ"
+		(property "MPN" "Analog Devices AD8418A (SOIC-8, verify suffix)"
 			(at 76.2 76.2 0)
 			(hide yes)
 			(effects

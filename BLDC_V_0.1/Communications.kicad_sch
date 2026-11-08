@@ -5066,6 +5066,1443 @@
 			)
 			(embedded_fonts no)
 		)
+	
+		(symbol
+		  "ACM2012:ACM2012-900-2P-T002"
+		  (pin_names
+		    (offset 0.254)
+		  )
+		  (in_bom yes)
+		  (on_board yes)
+		  (property "Reference" "L"
+		    (at 10.16 7.62 0)
+		    (effects
+		      (font
+		        (size 1.524 1.524)
+		      )
+		    )
+		  )
+		  (property "Value" "ACM2012-900-2P-T002"
+		    (at 7.62 -15.24 0)
+		    (effects
+		      (font
+		        (size 1.524 1.524)
+		      )
+		    )
+		  )
+		  (property "Footprint" "ACM2012_TDK"
+		    (at -1.27 13.97 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27) italic
+		      ) hide
+		    )
+		  )
+		  (property "Datasheet" "ACM2012-900-2P-T002"
+		    (at 0 11.43 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27) italic
+		      ) hide
+		    )
+		  )
+		  (property "ki_locked" ""
+		    (at 0 0 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "ki_keywords" "ACM2012-900-2P-T002"
+		    (at 0 0 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      ) hide
+		    )
+		  )
+		  (property "ki_fp_filters" "ACM2012_TDK"
+		    (at 0 0 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      ) hide
+		    )
+		  )
+		  (symbol "ACM2012-900-2P-T002_0_1"
+		    (polyline
+		      (pts
+		        (xy 2.54 -10.16)
+		        (xy 15.24 -10.16)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 2.54 0)
+		        (xy 3.81 0)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 2.54 3.81)
+		        (xy 2.54 -10.16)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 3.81 -7.62)
+		        (xy 2.54 -7.62)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 3.81 -7.62)
+		        (xy 3.81 -6.35)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 3.81 -3.175)
+		        (xy 13.97 -3.175)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 3.81 0)
+		        (xy 3.81 -1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 6.35 -7.62)
+		        (xy 6.35 -6.35)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 6.35 0)
+		        (xy 6.35 -1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 8.89 -7.62)
+		        (xy 8.89 -6.35)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 8.89 0)
+		        (xy 8.89 -1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 11.43 -7.62)
+		        (xy 11.43 -6.35)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 11.43 0)
+		        (xy 11.43 -1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 13.97 -7.62)
+		        (xy 13.97 -6.35)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 13.97 -4.445)
+		        (xy 3.81 -4.445)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 13.97 0)
+		        (xy 13.97 -1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 13.97 0)
+		        (xy 15.24 0)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 15.24 -10.16)
+		        (xy 15.24 3.81)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 15.24 -7.62)
+		        (xy 13.97 -7.62)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 15.24 3.81)
+		        (xy 2.54 3.81)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (arc
+		      (start 3.81 -1.27)
+		      (mid 5.08 -2.5345)
+		      (end 6.35 -1.27)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (arc
+		      (start 6.35 -6.35)
+		      (mid 5.08 -5.0855)
+		      (end 3.81 -6.35)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (arc
+		      (start 6.35 -1.27)
+		      (mid 7.62 -2.5345)
+		      (end 8.89 -1.27)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (arc
+		      (start 8.89 -6.35)
+		      (mid 7.62 -5.0855)
+		      (end 6.35 -6.35)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (arc
+		      (start 8.89 -1.27)
+		      (mid 10.16 -2.5345)
+		      (end 11.43 -1.27)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (arc
+		      (start 11.43 -6.35)
+		      (mid 10.16 -5.0855)
+		      (end 8.89 -6.35)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (arc
+		      (start 11.43 -1.27)
+		      (mid 12.7 -2.5345)
+		      (end 13.97 -1.27)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (arc
+		      (start 13.97 -6.35)
+		      (mid 12.7 -5.0855)
+		      (end 11.43 -6.35)
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (rectangle
+		      (start 15.24 -10.16)
+		      (end 15.24 -10.16)
+		      (stroke
+		        (width 0)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		  )
+		  (symbol "ACM2012-900-2P-T002_1_1"
+		    (rectangle
+		      (start 2.54 3.81)
+		      (end 15.24 -10.16)
+		      (stroke
+		        (width 0)
+		        (type default)
+		      )
+		      (fill
+		        (type background)
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 0 0)
+		      (length 2.54)
+		      (name ""
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "1"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 -7.62 0)
+		      (length 2.54)
+		      (name ""
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "2"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin unspecified line
+		      (at 17.78 -7.62 180)
+		      (length 2.54)
+		      (name ""
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "3"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin unspecified line
+		      (at 17.78 0 180)
+		      (length 2.54)
+		      (name ""
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "4"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		  )
+		)
+	
+		(symbol
+		  "PESD2CAN:PESD2CAN_215"
+		  (pin_names
+		    (offset 0.254)
+		  )
+		  (in_bom yes)
+		  (on_board yes)
+		  (property "Reference" "CR"
+		    (at 15.24 7.62 0)
+		    (effects
+		      (font
+		        (size 1.524 1.524)
+		      )
+		    )
+		  )
+		  (property "Value" "PESD2CAN_215"
+		    (at 33.02 5.08 0)
+		    (effects
+		      (font
+		        (size 1.524 1.524)
+		      )
+		    )
+		  )
+		  (property "Footprint" "SOT23_TO-236AB_NEX"
+		    (at 1.27 12.7 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27) italic
+		      ) hide
+		    )
+		  )
+		  (property "Datasheet" "PESD2CAN_215"
+		    (at -1.27 10.16 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27) italic
+		      ) hide
+		    )
+		  )
+		  (property "ki_locked" ""
+		    (at 0 0 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "ki_keywords" "PESD2CAN,215"
+		    (at 0 0 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      ) hide
+		    )
+		  )
+		  (property "ki_fp_filters" "SOT23_TO-236AB_NEX SOT23_TO-236AB_NEX-M SOT23_TO-236AB_NEX-L"
+		    (at 0 0 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      ) hide
+		    )
+		  )
+		  (symbol "PESD2CAN_215_0_1"
+		    (polyline
+		      (pts
+		        (xy 7.62 -12.7)
+		        (xy 20.32 -12.7)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 -10.16)
+		        (xy 17.78 -10.16)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 0)
+		        (xy 17.78 0)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 2.54)
+		        (xy 7.62 -12.7)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 8.89 -11.43)
+		        (xy 8.89 -8.89)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 8.89 -11.43)
+		        (xy 9.2075 -11.43)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 8.89 -10.16)
+		        (xy 11.43 -8.89)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 8.89 -1.27)
+		        (xy 8.89 1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 8.89 -1.27)
+		        (xy 9.2075 -1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 8.89 0)
+		        (xy 11.43 1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 11.43 -11.43)
+		        (xy 8.89 -10.16)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 11.43 -11.43)
+		        (xy 11.43 -8.89)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 11.43 -1.27)
+		        (xy 8.89 0)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 11.43 -1.27)
+		        (xy 11.43 1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 13.97 -8.89)
+		        (xy 13.97 -11.43)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 13.97 -8.89)
+		        (xy 16.51 -10.16)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 13.97 1.27)
+		        (xy 13.97 -1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 13.97 1.27)
+		        (xy 16.51 0)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 16.51 -10.16)
+		        (xy 13.97 -11.43)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 16.51 -8.89)
+		        (xy 16.1925 -8.89)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 16.51 -8.89)
+		        (xy 16.51 -11.43)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 16.51 0)
+		        (xy 13.97 -1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 16.51 1.27)
+		        (xy 16.1925 1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 16.51 1.27)
+		        (xy 16.51 -1.27)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 17.78 -5.08)
+		        (xy 20.32 -5.08)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 17.78 0)
+		        (xy 17.78 -10.16)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 20.32 -12.7)
+		        (xy 20.32 2.54)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 20.32 2.54)
+		        (xy 7.62 2.54)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (circle
+		      (center 17.78 -5.08)
+		      (radius 0.127)
+		      (stroke
+		        (width 0.508)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		  )
+		  (symbol "PESD2CAN_215_1_1"
+		    (rectangle
+		      (start 7.62 2.54)
+		      (end 20.32 -12.7)
+		      (stroke
+		        (width 0)
+		        (type default)
+		      )
+		      (fill
+		        (type background)
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 0 0)
+		      (length 7.62)
+		      (name ""
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "1"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 -10.16 0)
+		      (length 7.62)
+		      (name ""
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "2"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin unspecified line
+		      (at 27.94 -5.08 180)
+		      (length 7.62)
+		      (name ""
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "3"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		  )
+		)
+	
+		(symbol
+		  "15EDGVC:15EDGVC-3.5-03P-14-00AH"
+		  (pin_names
+		    (offset 0.254)
+		  )
+		  (in_bom yes)
+		  (on_board yes)
+		  (property "Reference" "J"
+		    (at 8.89 3.81 0)
+		    (effects
+		      (font
+		        (size 1.524 1.524)
+		      )
+		    )
+		  )
+		  (property "Value" "15EDGVC-3.5-03P-14-00AH"
+		    (at 0 7.62 0)
+		    (effects
+		      (font
+		        (size 1.524 1.524)
+		      )
+		    )
+		  )
+		  (property "Footprint" "CONN_15EDGVC-3.5-03P-1X_DEG"
+		    (at -1.27 10.16 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27) italic
+		      ) hide
+		    )
+		  )
+		  (property "Datasheet" "15EDGVC-3.5-03P-14-00AH"
+		    (at -1.27 12.7 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27) italic
+		      ) hide
+		    )
+		  )
+		  (property "ki_locked" ""
+		    (at 0 0 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "ki_keywords" "15EDGVC-3.5-03P-14-00A(H)"
+		    (at 0 0 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      ) hide
+		    )
+		  )
+		  (property "ki_fp_filters" "CONN_15EDGVC-3.5-03P-1X_DEG"
+		    (at 0 0 0)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      ) hide
+		    )
+		  )
+		  (symbol "15EDGVC-3.5-03P-14-00AH_1_1"
+		    (polyline
+		      (pts
+		        (xy 5.08 -7.62)
+		        (xy 12.7 -7.62)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 5.08 2.54)
+		        (xy 5.08 -7.62)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 12.7 -7.62)
+		        (xy 12.7 2.54)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 12.7 2.54)
+		        (xy 5.08 2.54)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (rectangle
+		      (start 5.08 2.54)
+		      (end 12.7 -7.62)
+		      (stroke
+		        (width 0)
+		        (type default)
+		      )
+		      (fill
+		        (type background)
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 0 0)
+		      (length 5.08)
+		      (name "1"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "1"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 -2.54 0)
+		      (length 5.08)
+		      (name "2"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "2"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 -5.08 0)
+		      (length 5.08)
+		      (name "3"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "3"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		  )
+		  (symbol "15EDGVC-3.5-03P-14-00AH_1_2"
+		    (polyline
+		      (pts
+		        (xy 5.08 -7.62)
+		        (xy 12.7 -7.62)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 5.08 2.54)
+		        (xy 5.08 -7.62)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 -5.08)
+		        (xy 5.08 -5.08)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 -5.08)
+		        (xy 8.89 -5.9267)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 -5.08)
+		        (xy 8.89 -4.2333)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 -2.54)
+		        (xy 5.08 -2.54)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 -2.54)
+		        (xy 8.89 -3.3867)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 -2.54)
+		        (xy 8.89 -1.6933)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 0)
+		        (xy 5.08 0)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 0)
+		        (xy 8.89 -0.8467)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 7.62 0)
+		        (xy 8.89 0.8467)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 12.7 -7.62)
+		        (xy 12.7 2.54)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (polyline
+		      (pts
+		        (xy 12.7 2.54)
+		        (xy 5.08 2.54)
+		      )
+		      (stroke
+		        (width 0.127)
+		        (type default)
+		      )
+		      (fill
+		        (type none)
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 0 0)
+		      (length 5.08)
+		      (name "1"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "1"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 -2.54 0)
+		      (length 5.08)
+		      (name "2"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "2"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin unspecified line
+		      (at 0 -5.08 0)
+		      (length 5.08)
+		      (name "3"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "3"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		  )
+		)
 	)
 	(junction
 		(at 44.45 163.83)
@@ -7797,7 +9234,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ESD_Protection:PESD2CAN_215")
+		(lib_id "PESD2CAN:PESD2CAN_215")
 		(at 142.875 29.845 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8375,7 +9812,7 @@
 		)
 	)
 	(symbol
-		(lib_id "CONNECTOR-S:15EDGVC-3.5-03P-14-00AH")
+		(lib_id "15EDGVC:15EDGVC-3.5-03P-14-00AH")
 		(at 140.97 142.875 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9363,7 +10800,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Common_Mode_Filters:ACM2012-900-2P-T002")
+		(lib_id "ACM2012:ACM2012-900-2P-T002")
 		(at 92.075 31.115 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9797,7 +11234,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "TI ISOW1044DFMR"
+			(at 55.88 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 25.4 50.8 0)

@@ -11950,7 +11950,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "Murata BLM18PG221SN1D"
+			(at 244.221 53.975 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 55.372 184.658 180)
@@ -14883,7 +14892,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "TI LP38693MP-3.3/NOPB"
+			(at 205.74 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3.3VA")
 		(at 201.93 73.66 0)
@@ -15129,7 +15147,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "BAT54C (SOT-23, common cathode)"
+			(at 190.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+5V")
 		(at 182.88 85.09 0)
