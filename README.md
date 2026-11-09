@@ -102,8 +102,11 @@ All design files are in [BLDC_V_0.1/](BLDC_V_0.1):
 | `Communications.kicad_sch` | Connectors, isolated CAN, ESD protection |
 | `BLDC_V_0.1.kicad_pcb` | PCB layout |
 | `Libraries/` | Third-party symbols, footprints and 3D models |
+| `BLDC_Project.pretty/` | Project footprint library: the 10 × 10 mm power pads |
 
 The schematics use the KiCad 10 format, so open them with KiCad 10 or newer. The PCB file is still in KiCad 7 format and will be redone.
+
+[changes.md](changes.md), in the repository root, lists every change made since the upstream design and the reason for each one.
 
 ## Open items
 
