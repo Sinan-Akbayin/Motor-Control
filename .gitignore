@@ -27,3 +27,8 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# KiCad lock files and local history
+*.lck
+.history/
+*.recovered.*

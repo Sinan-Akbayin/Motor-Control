@@ -661,6 +661,10 @@
     [
       "0b08cf2e-adc1-43e0-b092-2bca45900a22",
       "Communications"
+    ],
+    [
+      "17416cdd-2797-4e01-88f6-c144fe861af6",
+      "DC_Bus"
     ]
   ],
   "text_variables": {},
