@@ -18,7 +18,7 @@ KiCad hardware design for a three-phase BLDC motor drive, built around an STM32G
 | Power supply | LMR38020 buck, AMS1117-3.3 regulator | DC bus to 5 V, then 5 V to 3.3 V; a BAT54C diode-OR feeds the 3.3 V regulator from the 5 V rail or USB VBUS, so USB alone can power the 3.3 V logic (with little voltage margin, see changes.md) |
 | CAN | ISO1050 isolated transceiver, B0505S-1WR2 isolated 5 V converter | ACM2012 choke and PESD2CAN ESD protection; a 240 Ω resistor gives the converter its minimum load |
 | USB | Micro-B connector, USBLC6-2SC6 | ESD protection on D+ and D- |
-| Temperature sensing | 10 kΩ NTC | On the board, plus an input for an external sensor on J2 |
+| Temperature sensing | 10 kΩ NTC | On the board, plus an input for an external sensor on J10 |
 | PCB | — | 4 copper layers, 100 × 100 mm outline |
 
 ## Theoretical specifications
@@ -28,7 +28,7 @@ These values are calculated from datasheets. They have not been measured on a bo
 | Parameter | Value | What limits it |
 |---|---|---|
 | Nominal input voltage | 48 V (13-cell Li-ion pack, 54.6 V when fully charged) | — |
-| Input voltage range | 9 V to 58 V | Low end: DRV8350S supply, 9 V minimum. High end: the 58 V stand-off voltage of the TVS diode D4; above about 64 V the TVS starts to conduct |
+| Input voltage range | 9 V to 58 V | Low end: DRV8350S supply, 9 V minimum. High end: the 58 V stand-off voltage of the TVS diode D5; above about 64 V the TVS starts to conduct |
 | Absolute maximum bus voltage | 80 V, short transients only | DRV8350S VM pin (80 V absolute maximum) and AD8418A inputs (80 V survival). These are damage limits, not operating limits: the DRV8350S is specified up to 75 V and the AD8418A up to 70 V. At 80 V the bus voltage divider would also put 4.27 V on the MCU pin, above its 3.3 V supply |
 | Continuous phase current | 15 A RMS without a heatsink (estimate, to be confirmed by a thermal test) | MOSFET heating: about 1.4 W per MOSFET with 50 K/W junction-to-air. The datasheet gives 50 K/W for a single MOSFET on a test board with 6 cm² of copper; six MOSFETs close together on this board may run hotter |
 | Continuous phase current with a heatsink | about 18 A RMS | DC bus capacitor ripple current: 6 × 2.21 A at 100 kHz, about 12.2 A at 20 kHz |
@@ -52,17 +52,17 @@ How the main numbers were found:
 
 | Ref | Function |
 |---|---|
-| J13, J14 | DC bus power pads: VDC_IN (before the fuse) and GND |
+| J14, J4 | DC bus power pads: VDC_IN (before the fuse) and GND |
 | J5, J6, J7 | Motor phase pads: A, B and C |
-| J8 | CAN bus: CAN_H, CAN_L, and pin 3 to the isolated ground through 10 Ω |
+| J13 | CAN bus: CAN_H, CAN_L, and pin 3 to the isolated ground through 10 Ω |
 | J12 | Jumper for the 120 Ω CAN termination: fit it across pins 2 and 3 |
-| J2 | 6-pin JST-EH for Hall sensors or an encoder (one at a time): 1 +5 V, 2 HA/A, 3 HB/B, 4 HC/Z (index), 5 external NTC, 6 GND |
-| J3 | 10-pin SWD header with SWO and NRST |
-| J4 | USB Micro-B |
-| J1 | BOOT0 selection |
-| J9 | UART, digital output DO_1 |
-| J10 | I2C |
-| J11 | External SPI |
+| J10 | 6-pin JST-EH for Hall sensors or an encoder (one at a time): 1 +5 V, 2 HA/A, 3 HB/B, 4 HC/Z (index), 5 external NTC, 6 GND |
+| J2 | 10-pin SWD header with SWO and NRST |
+| J1 | USB Micro-B |
+| J3 | BOOT0 selection |
+| J8 | UART, digital output DO_1 |
+| J11 | I2C |
+| J9 | External SPI |
 
 ## MCU pins
 
