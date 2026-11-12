@@ -6343,7 +6343,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DRV-8350S:RTV0032E"
+		(property "Footprint" "BLDC_Project:TI_RTV0032E_DRV8350S"
 			(at 101.6 73.66 0)
 			(hide yes)
 			(show_name no)

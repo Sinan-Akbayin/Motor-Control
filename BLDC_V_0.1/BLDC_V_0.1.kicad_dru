@@ -1,0 +1,4 @@
+(version 1)
+(rule "fine_pitch_pads_U1_C28"
+(condition "A.Type == 'Pad' && B.Type == 'Pad' && ((A.memberOfFootprint('U1') && B.memberOfFootprint('U1')) || (A.memberOfFootprint('C28') && B.memberOfFootprint('C28')))")
+(constraint clearance (min 0.15mm)))

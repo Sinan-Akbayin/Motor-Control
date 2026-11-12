@@ -2600,7 +2600,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BSC070N:PG-WSON-8"
+		(property "Footprint" "BLDC_Project:Infineon_PG-WSON-8_BSC070N10NS5SC"
 			(at 85.09 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -3116,7 +3116,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BSC070N:PG-WSON-8"
+		(property "Footprint" "BLDC_Project:Infineon_PG-WSON-8_BSC070N10NS5SC"
 			(at 85.09 71.12 0)
 			(hide yes)
 			(show_name no)
