@@ -20,6 +20,7 @@ MM = 1e6
 CLR_PAD, CLR_SILK, CLR_EDGE, CLR_TXT = 0.15, 0.1, 0.5, 0.1
 MAXD = 3.0                         # mm: max distance from the footprint box
 SIZES = [(1.0, 0.15), (0.8, 0.12)]  # (height, line) in mm
+OVERRIDE = {'J14': (1.0, 0, 110.6, 163.9), 'J4': (0.8, 90, 112.65, 167.8)}   # ref: (height, angle, x, y)
 
 
 def poly_list(item, layer, clr):
@@ -294,6 +295,19 @@ def main(src, dst):
         rr = text_rect(f.Reference())
         placed.add(rr, rr)
         moved.append((f.GetReference(), round(s, 2), h, ang))
+
+    # per-reference overrides (11d4, user decision): J14 above the east end of its pad (the free strip between the
+    # F1 silk and the J14 outline), so J4 has the gap between the two pads to itself, centred across the gap and
+    # north of J14's pin-1 dot. Each override is checked like any other spot and reported.
+    allr = {f.GetReference(): text_rect(f.Reference()) for f in fps if f.Reference().IsVisible()}
+    for ref, (h, ang, x, y) in OVERRIDE.items():
+        f = b.FindFootprintByReference(ref)
+        apply(f.Reference(), h, dict(SIZES)[h], ang, x, y)
+        r = text_rect(f.Reference()); allr[ref] = r
+        ok = all(not rect_hits_poly(r, pts, pb) for pts, pb, _ in static.query(r)) and all(
+            q[2] + CLR_TXT < r[0] or q[0] - CLR_TXT > r[2] or q[3] + CLR_TXT < r[1] or q[1] - CLR_TXT > r[3]
+            for o, q in allr.items() if o != ref)
+        print('override %s %.1f/%d @%.2f,%.2f box %.2f,%.2f..%.2f,%.2f %s' % (ref, h, ang, x, y, *r, 'legal' if ok else 'NOT LEGAL'))
 
     b.Save(dst)
     print('kept', kept, 'moved', len(moved), 'hidden', len(hidden))

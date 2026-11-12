@@ -602,7 +602,8 @@ def f_gnd_pour(B):
     """F.Cu GND pour over the control area (north of y 133, logic side of the isolation gap only), priority
     below every existing zone; it is stitched to In1 / B.Cu by the GND vias placed in the batches above."""
     B.zone('GND', 'F', [(100.0, 92.0), (178.6, 92.0), (178.6, 104.0), (176.8, 104.0), (176.8, 120.5),
-                        (179.3, 120.5), (179.3, 133.0), (100.0, 133.0)], prio=0, solid=True, name='GND_F_control')
+                        (177.7, 120.5), (177.7, 133.0), (100.0, 133.0)], prio=0, solid=True, name='GND_F_control')
+    # 11d4: east edge 179.3 -> 177.7 = 2.5 mm from U9.3 (same ISO_X as the In1 / B.Cu GND zones in route_11c2)
 
 
 def f_gnd_stitch(B):

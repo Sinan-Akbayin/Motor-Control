@@ -32,3 +32,16 @@ fp-info-cache
 *.lck
 .history/
 *.recovered.*
+
+# Agent / script helpers (local only)
+tools/dev/
+
+# Fabrication outputs may be committed (BOM / position .csv, drill .xml etc.)
+!BLDC_V_0.1/fab/
+!BLDC_V_0.1/fab/**
+
+# Local 3D models downloaded by hand (vendor licence, not redistributed)
+BLDC_V_0.1/BLDC_Project.3dshapes/
+
+# Python bytecode
+__pycache__/

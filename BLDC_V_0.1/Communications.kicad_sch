@@ -12139,7 +12139,7 @@
 				)
 			)
 		)
-		(property "Comment" "CAP 0603 CER 10nF 16V %10 X7R (AbC)"
+		(property "Comment" "CAP 0603 CER 100nF 16V %10 X7R (AbC)"
 			(at 161.29 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -13334,7 +13334,7 @@
 				)
 			)
 		)
-		(property "Comment" "CAP 0603 CER 10nF 16V %10 X7R (AbC)"
+		(property "Comment" "CAP 0603 CER 100nF 16V %10 X7R (AbC)"
 			(at 72.39 38.1 0)
 			(hide yes)
 			(show_name no)

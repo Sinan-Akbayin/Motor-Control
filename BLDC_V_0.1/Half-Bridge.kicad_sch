@@ -3049,7 +3049,7 @@
 				)
 			)
 		)
-		(property "Comment" "0508 (Reversed) / > 1W"
+		(property "Comment" "0508 (Reversed)"
 			(at 72.39 69.85 90)
 			(hide yes)
 			(show_name no)
@@ -3442,7 +3442,7 @@
 				)
 			)
 		)
-		(property "Comment" "0508 (Reversed) / > 1W"
+		(property "Comment" "0508 (Reversed)"
 			(at 72.39 107.95 90)
 			(hide yes)
 			(show_name no)

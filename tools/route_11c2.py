@@ -41,12 +41,15 @@ LAYER = {'F': pcbnew.F_Cu, 'B': pcbnew.B_Cu, 'In1': pcbnew.In1_Cu, 'In2': pcbnew
 
 # GND copper may not enter the isolated CAN side (U10 pins 5-8, U9 pins 3-4, C60 pad 2 and east)
 # In2 planes (VDC, +3.3V, +5V) keep >= 6.7 mm (U10 pad-row gap) from isolated-side copper (11c4e)
-GND_AREA = [(100, 92), (178.6, 92), (178.6, 104.0), (176.8, 104.0), (176.8, 120.5), (179.3, 120.5),
-            (179.3, 135.0), (198.5, 135.0), (198.5, 176.3), (100, 176.3)]
+# 11d4: GND pours keep >= 2.5 mm from isolated copper: east edge x ISO_X (U9.3 west pad edge 180.28 - 2.5),
+# band top y ISO_Y east of it (C60.2 south pad edge 133.4 + 2.6); TP2 (GND, 180.0/137.5) stays inside the band
+ISO_X, ISO_Y = 177.7, 136.0
+GND_AREA = [(100, 92), (178.6, 92), (178.6, 104.0), (176.8, 104.0), (176.8, 120.5), (ISO_X, 120.5),
+            (ISO_X, ISO_Y), (198.5, ISO_Y), (198.5, 176.3), (100, 176.3)]
 BAND_Y = 133.0                    # power band (solid pad connections) starts here
-GND_CTRL = [(100, 92), (178.6, 92), (178.6, 104.0), (176.8, 104.0), (176.8, 120.5), (179.3, 120.5),
-            (179.3, BAND_Y + 0.2), (100, BAND_Y + 0.2)]
-GND_BAND = [(100, BAND_Y), (179.3, BAND_Y), (179.3, 135.0), (198.5, 135.0), (198.5, 176.3), (100, 176.3)]
+GND_CTRL = [(100, 92), (178.6, 92), (178.6, 104.0), (176.8, 104.0), (176.8, 120.5), (ISO_X, 120.5),
+            (ISO_X, BAND_Y + 0.2), (100, BAND_Y + 0.2)]
+GND_BAND = [(100, BAND_Y), (ISO_X, BAND_Y), (ISO_X, ISO_Y), (198.5, ISO_Y), (198.5, 176.3), (100, 176.3)]
 
 
 class Board:
