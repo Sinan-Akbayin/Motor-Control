@@ -27,3 +27,14 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# KiCad lock files and local history
+*.lck
+.history/
+*.recovered.*
+
+# Local 3D models downloaded by hand (vendor licence, not redistributed)
+BLDC_V_0.1/BLDC_Project.3dshapes/
+
+# Python bytecode
+__pycache__/

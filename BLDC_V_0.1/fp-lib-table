@@ -11,4 +11,6 @@
   (lib (name "JST-Connector")(type "KiCad")(uri "${KIPRJMOD}/Libraries/w_conn_jst-ph.pretty")(options "")(descr ""))
   (lib (name "CDRH127")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ul_CDRH127-LDNP-470MC/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "Capacitor")(type "KiCad")(uri "${KIPRJMOD}/Libraries/LIB_EEE-FN1J101V/EEE-FN1J101V/KiCad")(options "")(descr ""))
-)
+
+  (lib (name "LMR38020S") (type "KiCad") (uri "${KIPRJMOD}/Libraries/ul_LMR38020SDDAR/KiCADv6/footprints.pretty") (options "") (descr ""))
+  (lib (name "BLDC_Project") (type "KiCad") (uri "${KIPRJMOD}/BLDC_Project.pretty") (options "") (descr "")))
