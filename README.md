@@ -136,7 +136,7 @@ Gerber, drill, BOM and position files are not in the repository. Generate them f
 - Confirm the PCB stack-up with the intended fabricator.
 - Check the TVS, MOSFET and capacitor numbers against the manufacturers' current datasheets. Some values in the specifications above come from distributor listings; each one is marked there.
 - The TVS cannot absorb braking energy. If the battery is disconnected while the motor brakes, the bus voltage rises, so the firmware must limit or stop braking when the bus voltage gets too high.
-- Local bus decoupling is incomplete: one 10 µF and two 100 nF X7R ceramic capacitors still need to be added near the MOSFETs.
+- Local bus decoupling has not been tested. Each half-bridge has three ceramic capacitors from VDC to GND, 15 nF, 330 nF and 1 µF (C39, C40 and C42 on phase A), 5 to 9 mm from the MOSFETs (centre to centre). That is about 1.35 µF per phase. On the first board, measure the ringing on the switch nodes; if it is too high, add 100 V ceramic capacitance close to the MOSFETs.
 
 ## Repository layout
 
