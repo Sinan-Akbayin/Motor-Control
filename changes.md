@@ -2,7 +2,7 @@
 
 This file lists every change made to the design since the upstream state
 (`develop` @ 9ee8c38, <https://github.com/Sinan-Akbayin/Motor-Control>).
-It is the basis for the pull request description. Each entry says what changed and why.
+Each entry says what changed and why.
 
 Status: the schematic and the PCB layout are finished in KiCad. No board has been built or tested yet.
 
@@ -75,7 +75,7 @@ The old pins are marked as not connected.
 - DC bus current sensing: R41 1 mΩ 2512 shunt on the high side and U11 AD8418A amplifier to the MCU (I_DC, PA0). REF1 = +3.3VA and REF2 = GND give a bidirectional output of 20 mV/A around mid-scale.
 - Bulk capacitors: 8 × EEE-FN1J101V (63 V) replaced by 4 × Panasonic EEV-FK2A101M (100 µF, 100 V). 63 V capacitors are not safe on a 48 V bus that reaches 54.6 V when fully charged, plus transients.
 - **Bulk capacitors changed again (they are on the DRV8350 sheet), to 6 × Rubycon 100ZLJ220M12.5X25 (220 µF, 100 V, Ø12.5 × 25 mm, through-hole).** The four EEV-FK2A101M could carry only about 3.2 A of ripple current in total (793 mA each, distributor data). The ripple current in the DC bus capacitors of a three-phase inverter reaches about 0.65 times the phase current, so they limited the board to about 5 A RMS per phase. The six ZLJ capacitors are rated 2.21 A each at 100 kHz and 105 °C (Rubycon ZLJ datasheet), about 12.2 A in total at 20 kHz. That covers the 9.8 A needed at the 15 A RMS target. C33, C34, C32 and C35 changed part; C31 and C37 are new. The capacitors now use the standard `Device:C_Polarized` symbol. The old symbol had pins named `+` and `-`, which did not match the pad numbers 1 and 2 of the footprint.
-- **TVS D5: SMCJ58A → 5.0SMDJ58A (same SMC package and footprint).** The weakest parts on the bus have an absolute maximum of 80 V: the DRV8350S VM pin (TI SLVSDY6A, §7.1) and the AD8418A inputs (80 V survival, ADI datasheet Rev. E). The LMR38020 is rated 85 V (TI SNVSC40E, §7.1). Both diodes clamp at 93.6 V at their rated pulse current, but the larger one has a lower dynamic resistance. The SMCJ58A stays at or below 80 V only up to about 6 A; the 5.0SMDJ58A does so up to about 21 A (distributor data, to be checked against the Littelfuse datasheet).
+- **TVS D5: SMCJ58A → 5.0SMDJ58A (same SMC package and footprint).** The weakest parts on the bus have an absolute maximum of 80 V: the DRV8350S VM pin (TI SLVSDY6A, §7.1) and the AD8418A inputs (80 V survival, ADI datasheet Rev. E). The LMR38020 is rated 85 V (TI SNVSC40E, §7.1). Both diodes clamp at 93.6 V at their rated pulse current, but the larger one has a lower dynamic resistance. Both datasheets give the clamping voltage only at the rated pulse (93.6 V; 53.5 A for the 5.0SMDJ58A, 10/1000 µs) and the breakdown voltage only at 1 mA (at most 71.2 V). A straight line between these two points suggests that the SMCJ58A stays at or below 80 V only up to about 6 A and the 5.0SMDJ58A up to about 21 A. This is a rough estimate, not a guaranteed value.
 
 ## Ratings
 

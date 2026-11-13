@@ -8,6 +8,8 @@ KiCad hardware design for a three-phase BLDC motor drive, built around an STM32G
 
 The full schematic is also available as a PDF, so it can be viewed without KiCad: [docs/schematic.pdf](docs/schematic.pdf). In most PDF viewers you can click a sheet symbol to open that sheet.
 
+To edit the design, open `BLDC_V_0.1/BLDC_V_0.1.kicad_pro` in KiCad 10 or newer. The `BLDC_V_0.1` file and folder names are kept from the upstream repository; they do not give the version. This repository holds the hardware design only; no firmware is included.
+
 ## Hardware overview
 
 | Block | Parts | Notes |
@@ -36,21 +38,21 @@ These values are calculated from datasheets. They have not been measured on a bo
 | Absolute maximum bus voltage | 80 V, short transients only | DRV8350S VM pin (80 V absolute maximum) and AD8418A inputs (80 V survival). These are damage limits, not operating limits: the DRV8350S is specified up to 75 V and the AD8418A up to 70 V. At 80 V the bus voltage divider would also put 4.27 V on the MCU pin, above its 3.3 V supply |
 | Continuous phase current | 15 A RMS without a heatsink (estimate, to be confirmed by a thermal test) | MOSFET heating: about 1.4 W per MOSFET with 50 K/W junction-to-air. The datasheet gives 50 K/W for a single MOSFET on a test board with 6 cm² of copper; six MOSFETs close together on this board may run hotter |
 | Continuous phase current with a heatsink | about 18 A RMS | DC bus capacitor ripple current: 6 × 2.21 A at 100 kHz, about 12.2 A at 20 kHz |
-| Peak phase current (short pulses) | ±50 A | Range of the phase current measurement. ±50 A gives 0.15 V to 3.15 V at the ADC; the firmware sets the over-current trip below this |
+| Peak phase current (short pulses) | ±50 A | Range of the phase current measurement. ±50 A gives 0.15 V to 3.15 V at the ADC; the motor-control firmware (not part of this repository) must set the over-current trip below this |
 | DC input current | about 17 A at 15 A RMS phase current | 30 A fuse |
 | Output power | about 0.8 kW at 48 V and 15 A RMS | Assumes space-vector PWM at full modulation, a power factor of 0.9, and no losses. With plain sine PWM it is about 0.7 kW |
 | PWM frequency | 20 kHz (design point used for the numbers above) | Higher frequencies raise MOSFET switching losses |
 | Phase current measurement | 30 mV/A, 1.65 V at 0 A, range about ±53 A | 1.5 mΩ shunt × AD8418A gain of 20. The ideal range is ±55 A (0 V to 3.3 V); the amplifier output cannot reach the supply rails exactly |
 | DC bus current measurement | 20 mV/A, 1.65 V at 0 A, range about ±80 A | 1 mΩ shunt × AD8418A gain of 20 (ideal ±82.5 A) |
 | DC bus voltage measurement | 0 V to 61.8 V for 0 V to 3.3 V at the ADC | 39 kΩ / 2.2 kΩ divider |
-| Overvoltage clamp | about 80 V or less for surge currents up to about 21 A (estimate) | 5.0SMDJ58A: 93.6 V at 53.5 A (distributor data). The datasheet guarantees only the 93.6 V point |
+| Overvoltage clamp | about 80 V or less for surge currents up to about 21 A (rough estimate, not a guaranteed value) | 5.0SMDJ58A datasheet: at most 93.6 V at 53.5 A (10/1000 µs pulse). The datasheet gives no clamping voltage at lower currents |
 | Interfaces | Isolated CAN, USB, UART, I2C, SPI, SWD, Hall sensors or encoder | — |
 
 How the main numbers were found:
 
 - **MOSFET heating.** BSC070N10NS5SCATMA1 on-resistance is at most 7.0 mΩ at 25 °C. At about 110 °C it is taken as 1.6 times higher, 11.2 mΩ (an estimate; read the exact factor from the datasheet curve). In a half-bridge, each MOSFET conducts about half of the time. At 15 A RMS one MOSFET loses 15² × 0.0112 / 2 = 1.26 W in conduction and about 0.15 W in switching (assuming 50 ns per switching edge; the real value depends on the gate drive current set in the DRV8350S). 1.4 W × 50 K/W = 70 K, so the junction reaches 40 + 70 = 110 °C.
 - **Capacitor ripple.** In a three-phase inverter, the RMS ripple current in the DC bus capacitors can reach about 0.65 times the RMS phase current. At 15 A this is 9.8 A. Each capacitor is rated 2.21 A at 100 kHz and 105 °C (Rubycon ZLJ datasheet). At 20 kHz the rating is about 8 % lower, so six capacitors carry 6 × 2.21 × 0.92 ≈ 12.2 A.
-- **TVS clamp.** At its rated pulse (53.5 A) the 5.0SMDJ58A clamps at 93.6 V. Its breakdown voltage is at most 71.2 V, so its dynamic resistance is about (93.6 − 71.2) / 53.5 ≈ 0.42 Ω. The clamp stays at or below 80 V while the surge current is at most (80 − 71.2) / 0.42 ≈ 21 A. This is a straight-line estimate; check it against the surge waveform expected in use.
+- **TVS clamp.** At its rated pulse (53.5 A) the 5.0SMDJ58A clamps at 93.6 V. Its breakdown voltage is at most 71.2 V, measured at only 1 mA. Drawing a straight line between these two points gives a dynamic resistance is about (93.6 − 71.2) / 53.5 ≈ 0.42 Ω. The clamp stays at or below 80 V while the surge current is at most (80 − 71.2) / 0.42 ≈ 21 A. The real clamping curve is not a straight line, so this is only a rough estimate and not a guaranteed limit; check the protection against the surge waveform expected in use.
 
 ## Connectors
 
@@ -58,8 +60,8 @@ How the main numbers were found:
 |---|---|
 | J14, J4 | DC bus power pads: VDC_IN (before the fuse) and GND |
 | J5, J6, J7 | Motor phase pads: A, B and C |
-| J13 | CAN bus: CAN_H, CAN_L, and pin 3 to the isolated ground through 10 Ω |
-| J12 | Jumper for the 120 Ω CAN termination: fit it across pins 2 and 3 |
+| J13 | CAN bus: 1 CAN_H, 2 CAN_L, 3 isolated ground through 10 Ω |
+| J12 | Jumper for the 120 Ω CAN termination: fit it across pins 2 and 3 (pin 1 is not connected) |
 | J10 | 6-pin JST-EH for Hall sensors or an encoder (one at a time): 1 +5 V, 2 HA/A, 3 HB/B, 4 HC/Z (index), 5 external NTC, 6 GND |
 | J2 | 10-pin SWD header with SWO and NRST |
 | J1 | USB Micro-B |
@@ -121,7 +123,7 @@ How the main numbers were found:
 
 The high-current paths (DC bus, switch nodes, motor phases) are copper areas, not tracks.
 
-**Board-wide minimums** (board setup in `BLDC_V_0.1.kicad_pro`): track width 0.2 mm, clearance 0.15 mm, via 0.6 mm with 0.3 mm drill, annular ring 0.13 mm (the netclass vias have 0.15 mm or more), hole-to-copper 0.25 mm, hole-to-hole 0.25 mm, copper-to-board-edge 0.3 mm. The custom rule file `BLDC_V_0.1.kicad_dru` lowers the pad-to-pad clearance to 0.15 mm only between pads of the same part, for U1 (MCU, 0.5 mm pin pitch, 0.195 mm between pads) and C28 (0201 capacitor, 0.18 mm between pads); the netclass clearances apply everywhere else.
+**Board-wide minimums** (board setup in `BLDC_V_0.1.kicad_pro`): track width 0.2 mm, clearance 0.15 mm, smallest hole 0.2 mm (the five thermal vias in the U5 DRV8350S footprint; every other via on the board is 0.6 / 0.3 mm or 0.8 / 0.4 mm), via diameter 0.6 mm, annular ring 0.13 mm (the netclass vias have 0.15 mm or more), hole-to-copper 0.25 mm, hole-to-hole 0.25 mm, copper-to-board-edge 0.3 mm. The custom rule file `BLDC_V_0.1.kicad_dru` lowers the pad-to-pad clearance to 0.15 mm only between pads of the same part, for U1 (MCU, 0.5 mm pin pitch, 0.195 mm between pads) and C28 (0201 capacitor, 0.18 mm between pads); the netclass clearances apply everywhere else.
 
 ## Fabrication outputs
 
@@ -134,8 +136,10 @@ Gerber, drill, BOM and position files are not in the repository. Generate them f
 - DRC reports 0 errors and 13 warnings. 3 are silkscreen warnings caused by footprint graphics. 10 say that a board footprint differs from its library copy (R15, R16, R20, R21, R25, R26, L3, U2, U4 and J1); the difference is 1 nm rounding in pads or graphics.
 - The 3D body of F1 (fuse holder) is a close substitute, not the real part.
 - Confirm the PCB stack-up with the intended fabricator.
-- Check the TVS, MOSFET and capacitor numbers against the manufacturers' current datasheets. Some values in the specifications above come from distributor listings; each one is marked there.
-- The TVS cannot absorb braking energy. If the battery is disconnected while the motor brakes, the bus voltage rises, so the firmware must limit or stop braking when the bus voltage gets too high.
+- Check the TVS, MOSFET and capacitor numbers against the manufacturers' current datasheets before relying on them.
+- The 3.3 V rail has little voltage margin. The AMS1117-3.3 (U2) needs at least 4.6 V at its input, but its input comes from +5 V or USB VBUS through the BAT54C diode D2, so in the worst case it gets only 4.2 to 4.5 V and the 3.3 V rail can sag. With typical part values the margin is about 0.25 V. Details in [changes.md](changes.md#power-supply).
+- The isolated CAN supply can be slightly too high. The isolated converter U9 (B0505S-1WR2) is unregulated; with its minimum load it gives 5.25 V typical and up to 5.5 V worst case. The ISO1050 (U10) is specified for 4.75 to 5.25 V on VCC2, with 6 V absolute maximum. Measure VCC2 on the first board with the CAN bus idle. Details in [changes.md](changes.md#isolated-can).
+- The TVS cannot absorb braking energy. If the battery is disconnected while the motor brakes, the bus voltage rises, so the motor-control firmware must limit or stop braking when the bus voltage gets too high.
 - Local bus decoupling has not been tested. Each half-bridge has three ceramic capacitors from VDC to GND, 15 nF, 330 nF and 1 µF (C39, C40 and C42 on phase A), 5 to 9 mm from the MOSFETs (centre to centre). That is about 1.35 µF per phase. On the first board, measure the ringing on the switch nodes; if it is too high, add 100 V ceramic capacitance close to the MOSFETs.
 
 ## Repository layout
