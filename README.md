@@ -2,9 +2,11 @@
 
 KiCad hardware design for a three-phase BLDC motor drive, built around an STM32G473 microcontroller and a DRV8350S gate driver.
 
-![3D render of the version 0.2 board](docs/render/pcb_angled.png)
+![3D render of the version 1.0.0 board](docs/render/pcb_angled.png)
 
-> **Status:** version 0.2. The schematic is finished (ERC: 0 errors) and the PCB is placed and routed (DRC: 0 errors, 0 unconnected items). No board has been built or tested yet. See [Known issues and open items](#known-issues-and-open-items).
+> **Status:** version 1.0.0. The schematic is finished (ERC: 0 errors) and the PCB is placed and routed (DRC: 0 errors, 0 unconnected items). No board has been built or tested yet. See [Known issues and open items](#known-issues-and-open-items).
+
+The full schematic is also available as a PDF, so it can be viewed without KiCad: [docs/schematic.pdf](docs/schematic.pdf). In most PDF viewers you can click a sheet symbol to open that sheet.
 
 ## Hardware overview
 
@@ -91,7 +93,7 @@ How the main numbers were found:
 
 ## PCB
 
-![Top view of the version 0.2 board](docs/render/pcb_top.png)
+![Top view of the version 1.0.0 board](docs/render/pcb_top.png)
 
 **Size.** 98.5 × 84.3 mm, rounded corners (1 mm radius), four M3 mounting holes. The power pads (DC input and motor phases) are on the bottom edge, the signal connectors on the top edge.
 
@@ -120,29 +122,6 @@ How the main numbers were found:
 The high-current paths (DC bus, switch nodes, motor phases) are copper areas, not tracks.
 
 **Board-wide minimums** (board setup in `BLDC_V_0.1.kicad_pro`): track width 0.2 mm, clearance 0.15 mm, via 0.6 mm with 0.3 mm drill, annular ring 0.13 mm (the netclass vias have 0.15 mm or more), hole-to-copper 0.25 mm, hole-to-hole 0.25 mm, copper-to-board-edge 0.3 mm. The custom rule file `BLDC_V_0.1.kicad_dru` lowers the pad-to-pad clearance to 0.15 mm only between pads of the same part, for U1 (MCU, 0.5 mm pin pitch, 0.195 mm between pads) and C28 (0201 capacitor, 0.18 mm between pads); the netclass clearances apply everywhere else.
-
-## How the PCB is built
-
-The version 0.2 layout was made by script. Eight pcbnew Python scripts in [tools/](tools) place the parts and draw every track, via and copper area by explicit coordinates (no autorouter); tracks that were later tidied by hand in KiCad are stored as data and replayed by step 7. Each script reads one board file and writes a new one; they run in this order, as `python tools/<script> ...` with KiCad's Python (see below):
-
-| Step | Command | What it does |
-|---|---|---|
-| 1 | `place_v2.py place <in> <out>` | Deletes tracks, copper areas and the old outline, places every part (floorplan v2) and draws the board outline. `place_v2.py check <board>` reports courtyard overlaps and parts off the board |
-| 2 | `place_v3.py place <in> <out>` | Floorplan v3: imports `place_v2.py` (keep both in the same folder) and re-plans the control section around the MCU pins |
-| 3 | `route_11c2.py <in> <out> --rotate-c26` | Deletes all tracks, vias and copper areas, then draws the planes, DC input, half-bridges, gate drive, current-sense (Kelvin) connections and decoupling. `--rotate-c26` turns C26 by 180° so that its two nets can be routed; without it they stay unrouted |
-| 4 | `route_11c3.py <in> <out>` | Adds the analog measurement nets (phase currents, DC bus current, phase and bus voltages) |
-| 5 | `route_11c4.py <in> <out>` | Adds all remaining nets and turns R1 by 180°; refills the copper areas |
-| 6 | `silk_11d.py <in> <out>` | Moves, resizes or hides the reference texts on the silkscreen; nothing else |
-| 7 | `user_tracks_11d.py <in> <out>` | Replays tracks that were edited by hand in KiCad (mostly 90° corners turned into 45°), from `tools/user_tracks_11d.txt`; nothing else |
-| 8 | `fp_meta_11d.py <in> <out>` | Copies attributes, 3D models, description, keywords and the L2 keepout from the library footprints, then refills the copper areas; no copper or position changes otherwise |
-
-How to run the chain:
-
-- Use the Python that comes with KiCad 10 (on Windows `C:\Program Files\KiCad\10.0\bin\python.exe`) and run the scripts from the repository root. `fp_meta_11d.py` reads the KiCad standard libraries from the path in its `SYS` constant, `C:/Program Files/KiCad/10.0/share/kicad` by default; change it if KiCad is installed elsewhere.
-- Work in a scratch folder outside `BLDC_V_0.1/`. pcbnew rewrites the `.kicad_pro` next to every board it saves, using the settings it has loaded; saving a board next to the project's `.kicad_pro` can reset the netclasses. Copy `BLDC_V_0.1.kicad_pro` and `BLDC_V_0.1.kicad_dru` into each output folder (the routing scripts read them from there so that the copper areas are filled with the real rules), and copy only the finished `.kicad_pcb` back into `BLDC_V_0.1/`.
-- To run DRC in the scratch folder, also copy `fp-lib-table` there and replace `${KIPRJMOD}` in it with the absolute path of `BLDC_V_0.1/`, so that KiCad finds the project footprint library. Then check the final board with `kicad-cli pcb drc --severity-all <board>.kicad_pcb`.
-
-**The chain cannot be reproduced from this repository alone.** Step 1 needs a board that already contains every version 0.2 footprint with its nets (made in KiCad with *Update PCB from Schematic*). That input board, and the placement board that steps 3 to 8 were run on, are not in the repository. `BLDC_V_0.1.kicad_pcb` is the output of the chain and is the reference.
 
 ## Fabrication outputs
 
@@ -181,7 +160,8 @@ Outside `BLDC_V_0.1/`:
 
 | Path | Content |
 |---|---|
-| `tools/` | pcbnew Python scripts that build the PCB (see [How the PCB is built](#how-the-pcb-is-built)) |
+| `tools/` | pcbnew Python scripts that were used to place and route the PCB |
+| `docs/schematic.pdf` | The whole schematic as a PDF with clickable sheet links, exported from KiCad (*File → Plot*); export it again after any schematic change |
 | `docs/render/` | 3D renders of the board used in this README |
 | `changes.md` | Every change made since the upstream design, with the reason for each one |
 
@@ -189,7 +169,7 @@ The KiCad design files are written by KiCad 10.0. Open them with KiCad 10 or new
 
 ## Changes from version 0.1
 
-Version 0.2 fixes errors in the version 0.1 schematic and replaces the PCB layout. In short:
+Version 1.0.0 fixes errors in the version 0.1 schematic and replaces the PCB layout. In short:
 
 - Power rails fixed: the 3.3 V rail was split across two unconnected nets, and the buck converter had no feedback.
 - USB VBUS separated from the 5 V rail; a diode-OR lets USB power the 3.3 V logic.
