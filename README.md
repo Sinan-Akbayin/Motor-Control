@@ -160,7 +160,6 @@ Outside `BLDC_V_0.1/`:
 
 | Path | Content |
 |---|---|
-| `tools/` | pcbnew Python scripts that were used to place and route the PCB |
 | `docs/schematic.pdf` | The whole schematic as a PDF with clickable sheet links, exported from KiCad (*File → Plot*); export it again after any schematic change |
 | `docs/render/` | 3D renders of the board used in this README |
 | `changes.md` | Every change made since the upstream design, with the reason for each one |
